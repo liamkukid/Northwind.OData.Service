@@ -16,3 +16,5 @@ GET https://localhost:5101/catalog/categories(8)/?$select=CategoryId,CategoryNam
 ###
 GET https://localhost:5101/catalog/v1/products(50)/
 ###
+GET https://localhost:5101/catalog/products
+    ?$filter=startswith(ProductName, 'Ch') and UnitPrice lt 44.5)
