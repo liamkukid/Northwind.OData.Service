@@ -1,0 +1,17 @@
+GET https://localhost:5101/catalog/categories/ HTTP/1.1
+###
+GET https://localhost:5101/catalog/categories(3)
+###
+GET https://localhost:5101/catalog/categories/3
+###
+GET https://localhost:5101/catalog/categories/$count
+###
+GET https://localhost:5101/catalog/products
+###
+GET https://localhost:5101/catalog/products/$count
+###
+GET https://localhost:5101/catalog/products(2)
+###
+GET https://localhost:5101/catalog/suppliers
+###
+GET https://localhost:5101/catalog/suppliers/$count

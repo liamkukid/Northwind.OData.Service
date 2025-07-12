@@ -1,0 +1,16 @@
+GET https://localhost:5101/catalog/categories/?$select=CategoryId,CategoryName
+###
+GET https://localhost:5101/catalog/products/?$filter=startswith(ProductName, 'Ch') or (UnitPrice gt 50)
+###
+GET https://localhost:5101/catalog/products/?$orderby=UnitPrice desc, ProductName&$select=ProductId,ProductName,UnitPrice
+###
+GET https://localhost:5101/catalog/products(77)/?$select=ProductId,ProductName,UnitPrice
+###
+GET https://localhost:5101/catalog/products/?$orderby=ProductId desc
+###
+GET https://localhost:5101/catalog/categories/?$select=CategoryId,CategoryName&$expand=Products
+###
+GET https://localhost:5101/catalog/categories(8)/?$select=CategoryId,CategoryName&$expand=Products
+###
+GET https://localhost:5101/catalog/v1/products(50)/
+###

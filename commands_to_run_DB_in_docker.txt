@@ -1,0 +1,16 @@
+  docker run -v 'C:/Users/liamk/source/repos/Northwind/apps-services-net7/sql-scripts:/home' \
+  --rm -e 'ACCEPT_EULA=Y' -e 'MSSQL_SA_PASSWORD=dima12345++' -p 1433:1433 \
+  --name sql1 --hostname sql1 -d -v data:/var/opt/mssql \
+  mcr.microsoft.com/mssql/server:2025-latest
+ 
+ docker exec -it sql1 bash
+ 
+ /opt/mssql-tools18/bin/sqlcmd -S localhost -i /home/Northwind4SQLServer.sql \
+ -U sa -P dima12345++ -No
+ 
+ /opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P dima12345++ -No
+ 
+ select * from northwind.dbo.Products;
+ go
+ 
+ 
