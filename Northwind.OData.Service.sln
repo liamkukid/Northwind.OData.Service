@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36221.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.OData.Service", ".\Northwind.OData.Service\Northwind.OData.Service.csproj", "{FBC3997E-1390-4A45-B6C3-17CCCBC6413C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.OData.Service", "Northwind.OData.Service\Northwind.OData.Service.csproj", "{FBC3997E-1390-4A45-B6C3-17CCCBC6413C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Common.DataContext.SqlServer", ".\Northwind.Common.DataContext.SqlServer\Northwind.Common.DataContext.SqlServer.csproj", "{0E0826F8-0EFD-9BEA-01C1-3724767F6F3B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Common.DataContext.SqlServer", "Northwind.Common.DataContext.SqlServer\Northwind.Common.DataContext.SqlServer.csproj", "{0E0826F8-0EFD-9BEA-01C1-3724767F6F3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Common.EntityModels.SqlServer", ".\Northwind.Common.EntityModels.SqlServer\Northwind.Common.EntityModels.SqlServer.csproj", "{67A3DE73-5377-1EFB-104C-985713386C9F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Common.EntityModels.SqlServer", "Northwind.Common.EntityModels.SqlServer\Northwind.Common.EntityModels.SqlServer.csproj", "{67A3DE73-5377-1EFB-104C-985713386C9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.OData.Client.Mvc", "Northwind.OData.Client.Mvc\Northwind.OData.Client.Mvc.csproj", "{A711396D-FE96-41A3-9626-31FB2AB3EF09}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{67A3DE73-5377-1EFB-104C-985713386C9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67A3DE73-5377-1EFB-104C-985713386C9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67A3DE73-5377-1EFB-104C-985713386C9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A711396D-FE96-41A3-9626-31FB2AB3EF09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A711396D-FE96-41A3-9626-31FB2AB3EF09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A711396D-FE96-41A3-9626-31FB2AB3EF09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A711396D-FE96-41A3-9626-31FB2AB3EF09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
