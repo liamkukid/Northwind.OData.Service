@@ -18,7 +18,7 @@ public static class Methods
     public static IEdmModel GetEdmModelForOrderSystem()
     {
         ODataConventionModelBuilder modelBuilder = new ();
-        modelBuilder.EntitySet<Customer>("Customer");
+        modelBuilder.EntitySet<Customer>("Customers");
         modelBuilder.EntitySet<Order>("Orders");
         modelBuilder.EntitySet<Employee>("Employees");
         modelBuilder.EntitySet<Product>("Products");

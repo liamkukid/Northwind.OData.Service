@@ -17,4 +17,12 @@ GET https://localhost:5101/catalog/categories(8)/?$select=CategoryId,CategoryNam
 GET https://localhost:5101/catalog/v1/products(50)/
 ###
 GET https://localhost:5101/catalog/products
-    ?$filter=startswith(ProductName, 'Ch') and UnitPrice lt 44.5)
+    ?$filter=contains(ProductName, 'ch') and UnitPrice lt 44.95
+    &$orderby=Supplier/Country,UnitPrice
+    &$select=ProductName,UnitPrice
+    &$expand=Supplier
+###
+GET https://localhost:5101/orderSystem/customers/
+    ?$expand=Orders/&$count
+    &$filter=Country eq 'Germany' and Orders/$count gt 1
+    &$select=CustomerId,CompanyName,Orders
